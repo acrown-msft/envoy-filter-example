@@ -1,3 +1,7 @@
 [submodule "envoy"]
 	path = envoy
 	url = https://github.com/istio/envoy
+[submodule "envoy-wasm"]
+	path = envoy-wasm
+	url = https://github.com/envoyproxy/envoy-wasm
+	branch = master
