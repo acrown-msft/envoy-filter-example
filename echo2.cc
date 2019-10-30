@@ -10,8 +10,7 @@ namespace Filter {
 
 Network::FilterStatus Echo2::onData(Buffer::Instance& data, bool) {
   ENVOY_CONN_LOG(trace, "echo2: got {} bytes", read_callbacks_->connection(), data.length());
-  read_callbacks_->connection().write(data, false);
-  return Network::FilterStatus::StopIteration;
+  return Network::FilterStatus::Continue;
 }
 
 } // namespace Filter
